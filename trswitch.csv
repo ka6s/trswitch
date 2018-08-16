@@ -1,0 +1,12 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C1,C2,C3,C4,C5,C6,C7,C8,C9";"C_1206_HandSoldering";9;"0.1uF";;;
+2;"K1,K2,K3";"G6J-2P-Y";3;"RELAY_RF";;;
+3;"P1";"Pin_Header_Straight_1x03";1;"CONN_01X03";;;
+4;"P2";"Socket_Strip_Angled_1x06";1;"CONN_01X06";;;
+5;"P3,P4,P5";"SO-239";3;"SO239";;;
+6;"R1";"R_1206";1;"47K";;;
+7;"R2,R3";"R_1206";2;"10K";;;
+8;"Q1";"TO-92_Inline_Narrow_Oval";1;"2n3906";;;
+9;"Q2";"TO-92_Inline_Narrow_Oval";1;"2n3904";;;
+10;"J1,J2";"SMA_F_RA";2;"SMA";;;
+11;"D1,D2,D3";"SMA_Handsoldering";3;"BAS16J";;;

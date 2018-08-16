@@ -1,0 +1,17 @@
+mv alex.bak trswitch.bak
+mv alex.bck trswitch.bck
+mv alex.bin trswitch.bin
+mv alex.cmp trswitch.cmp
+mv alex.csv trswitch.csv
+mv alex.dcm trswitch.dcm
+mv alex.dsn trswitch.dsn
+mv alex.kicad_pcb trswitch.kicad_pcb
+mv alex.kicad_pcb-bak trswitch.kicad_pcb-bak
+mv alex.lib trswitch.lib
+mv alex.net trswitch.net
+mv alex.pro trswitch.pro
+mv alex.rules trswitch.rules
+mv alex.sch trswitch.sch
+mv alex.ses trswitch.ses
+mv alex.xls trswitch.xls
+mv alex.xml trswitch.xml

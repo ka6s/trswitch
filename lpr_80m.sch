@@ -1,0 +1,307 @@
+EESchema Schematic File Version 3
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:alex-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 20
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RELAY_RF K?
+U 1 1 5A7726BC
+P 5050 5350
+F 0 "K?" H 5050 5878 50  0000 C CNN
+F 1 "RELAY_RF" H 5050 5787 50  0000 C CNN
+F 2 "" H 5050 5350 50  0000 C CNN
+F 3 "" H 5050 5350 50  0000 C CNN
+	1    5050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY_RF K?
+U 1 1 5A7726C3
+P 7200 5300
+F 0 "K?" H 7200 5828 50  0000 C CNN
+F 1 "RELAY_RF" H 7200 5737 50  0000 C CNN
+F 2 "" H 7200 5300 50  0000 C CNN
+F 3 "" H 7200 5300 50  0000 C CNN
+	1    7200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5A7726CA
+P 4150 5500
+F 0 "#PWR?" H 4150 5350 50  0001 C CNN
+F 1 "+12V" H 4165 5673 50  0000 C CNN
+F 2 "" H 4150 5500 50  0000 C CNN
+F 3 "" H 4150 5500 50  0000 C CNN
+	1    4150 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 5700 0    60   Input ~ 0
+lpf_80m_en_n
+Text HLabel 4250 5100 0    60   Input ~ 0
+rf_in
+$Comp
+L +12V #PWR?
+U 1 1 5A7726D2
+P 6450 5500
+F 0 "#PWR?" H 6450 5350 50  0001 C CNN
+F 1 "+12V" H 6465 5673 50  0000 C CNN
+F 2 "" H 6450 5500 50  0000 C CNN
+F 3 "" H 6450 5500 50  0000 C CNN
+	1    6450 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 5150 2    60   Output ~ 0
+rf_out
+Wire Wire Line
+	4150 5500 4150 5600
+Wire Wire Line
+	4150 5600 4650 5600
+Wire Wire Line
+	4650 5700 4300 5700
+Wire Wire Line
+	4250 5100 4650 5100
+Wire Wire Line
+	4500 5700 4500 5850
+Wire Wire Line
+	4500 5850 6800 5850
+Wire Wire Line
+	6800 5850 6800 5650
+Connection ~ 4500 5700
+Wire Wire Line
+	6450 5500 6450 5550
+Wire Wire Line
+	6450 5550 6800 5550
+NoConn ~ 7600 5450
+NoConn ~ 7600 5250
+Wire Wire Line
+	7850 5150 7600 5150
+NoConn ~ 7600 4950
+NoConn ~ 5450 5000
+NoConn ~ 5450 5300
+NoConn ~ 5450 5500
+NoConn ~ 4650 5400
+NoConn ~ 6800 5350
+$Comp
+L C C?
+U 1 1 5A8F99EB
+P 6100 3850
+F 0 "C?" H 6215 3896 50  0000 L CNN
+F 1 "1300 pF" H 6215 3805 50  0000 L CNN
+F 2 "" H 6138 3700 50  0000 C CNN
+F 3 "" H 6100 3850 50  0000 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A8F99F2
+P 7050 3850
+F 0 "C?" H 7165 3896 50  0000 L CNN
+F 1 "200 pF" H 7100 3700 50  0000 L CNN
+F 2 "" H 7088 3700 50  0000 C CNN
+F 3 "" H 7050 3850 50  0000 C CNN
+	1    7050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5A8F99F9
+P 5650 3550
+F 0 "L?" V 5472 3550 50  0000 C CNN
+F 1 "2.62 uH" V 5563 3550 50  0000 C CNN
+F 2 "" H 5650 3550 50  0000 C CNN
+F 3 "" H 5650 3550 50  0000 C CNN
+	1    5650 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5A8F9A00
+P 6600 3550
+F 0 "L?" V 6422 3550 50  0000 C CNN
+F 1 "2.62 uH" V 6513 3550 50  0000 C CNN
+F 2 "" H 6600 3550 50  0000 C CNN
+F 3 "" H 6600 3550 50  0000 C CNN
+	1    6600 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A8F9A07
+P 5200 3850
+F 0 "C?" H 5315 3896 50  0000 L CNN
+F 1 "200 pF" H 5250 3750 50  0000 L CNN
+F 2 "" H 5238 3700 50  0000 C CNN
+F 3 "" H 5200 3850 50  0000 C CNN
+	1    5200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A8F9A0E
+P 4800 3850
+F 0 "C?" H 4915 3896 50  0000 L CNN
+F 1 "200 pF" H 4850 3750 50  0000 L CNN
+F 2 "" H 4838 3700 50  0000 C CNN
+F 3 "" H 4800 3850 50  0000 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A8F9A15
+P 7450 3850
+F 0 "C?" H 7565 3896 50  0000 L CNN
+F 1 "200 pF" H 7565 3805 50  0000 L CNN
+F 2 "" H 7488 3700 50  0000 C CNN
+F 3 "" H 7450 3850 50  0000 C CNN
+	1    7450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A8F9A1C
+P 4800 4100
+F 0 "#PWR?" H 4800 3850 50  0001 C CNN
+F 1 "GND" H 4805 3927 50  0000 C CNN
+F 2 "" H 4800 4100 50  0000 C CNN
+F 3 "" H 4800 4100 50  0000 C CNN
+	1    4800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A8F9A22
+P 5200 4100
+F 0 "#PWR?" H 5200 3850 50  0001 C CNN
+F 1 "GND" H 5205 3927 50  0000 C CNN
+F 2 "" H 5200 4100 50  0000 C CNN
+F 3 "" H 5200 4100 50  0000 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A8F9A28
+P 6100 4100
+F 0 "#PWR?" H 6100 3850 50  0001 C CNN
+F 1 "GND" H 6105 3927 50  0000 C CNN
+F 2 "" H 6100 4100 50  0000 C CNN
+F 3 "" H 6100 4100 50  0000 C CNN
+	1    6100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A8F9A2E
+P 7050 4100
+F 0 "#PWR?" H 7050 3850 50  0001 C CNN
+F 1 "GND" H 7055 3927 50  0000 C CNN
+F 2 "" H 7050 4100 50  0000 C CNN
+F 3 "" H 7050 4100 50  0000 C CNN
+	1    7050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A8F9A34
+P 7450 4100
+F 0 "#PWR?" H 7450 3850 50  0001 C CNN
+F 1 "GND" H 7455 3927 50  0000 C CNN
+F 2 "" H 7450 4100 50  0000 C CNN
+F 3 "" H 7450 4100 50  0000 C CNN
+	1    7450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4100 4800 4000
+Wire Wire Line
+	5200 4100 5200 4000
+Wire Wire Line
+	6100 4100 6100 4000
+Wire Wire Line
+	7050 4100 7050 4000
+Wire Wire Line
+	7450 4100 7450 4000
+Wire Wire Line
+	4800 3700 4800 3550
+Wire Wire Line
+	4400 3550 5350 3550
+Wire Wire Line
+	5200 3700 5200 3550
+Connection ~ 5200 3550
+Wire Wire Line
+	5950 3550 6300 3550
+Wire Wire Line
+	6100 3700 6100 3550
+Connection ~ 6100 3550
+Wire Wire Line
+	7050 3700 7050 3550
+Wire Wire Line
+	6900 3550 8050 3550
+Wire Wire Line
+	7450 3550 7450 3700
+Connection ~ 7050 3550
+Text Notes 7100 3250 2    60   ~ 0
+80m lpf - Design cutoff at 4.9 MHz
+Wire Wire Line
+	5450 5200 5950 5200
+Wire Wire Line
+	5950 5200 5950 4550
+Wire Wire Line
+	5950 4550 4400 4550
+Wire Wire Line
+	4400 4550 4400 3550
+Connection ~ 4800 3550
+Wire Wire Line
+	6800 5050 6650 5050
+Wire Wire Line
+	6650 5050 6650 4550
+Wire Wire Line
+	6650 4550 8050 4550
+Wire Wire Line
+	8050 4550 8050 3550
+Connection ~ 7450 3550
+$EndSCHEMATC
